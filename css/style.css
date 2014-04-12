@@ -1,0 +1,82 @@
+/* 
+    Created on : 2014-4-12, 22:34:54
+    Author     : Нико
+*/
+
+body {
+    width: 700px;
+    margin: auto;
+    font-family: 'Special Elite', cursive;
+}
+
+#body {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#greet {
+    text-align: center;
+}
+
+#greet h1 {
+    text-align: center;
+}
+
+#winner-text {
+    text-align: center;
+}
+
+#info-boxes {
+    margin-top: 10px;
+    margin-left: 260px;
+}
+
+#info-boxes img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
+
+#info-one {
+    cursor: pointer;
+}
+
+#info-two {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#info-three {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#info-tech {
+    margin-left: 50px;
+}
+
+#info-rules {
+    margin-left: 50px;
+}
+
+#info-game-stats {
+    margin-left: 50px;
+}
+
+#footer {
+    margin-top: 350px;
+}
+
+#footer p {
+    width: 700px;
+    text-align: center;
+}

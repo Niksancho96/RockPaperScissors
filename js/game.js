@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    infoBoxes();
+    init();
+    
     var cpuChoice = genNumber();
     var userChoice;
     
@@ -54,9 +57,31 @@ $(document).ready(function() {
             console.log(cpuChoice);
         }
     });
-    
-    
 });
+
+function init() {
+    var playerName = prompt("Please enter your name");
+    playerName = setPlayerName(playerName);
+    $("#greet-msg").text("Hello, " + playerName + "! This is the game Rock, paper, scissor! You know the rules, so rock on! Get it? :D");
+}
+
+function infoBoxes() {
+    $("#info-tech").hide();
+    $("#info-rules").hide();
+    $("#info-game-stats").hide();
+    
+    $("#info-one").click(function() {
+        $("#info-tech").stop().slideToggle();
+    });
+    
+    $("#info-two").click(function() {
+        $("#info-rules").stop().slideToggle();
+    });
+    
+    $("#info-three").click(function() {
+        $("#info-game-stats").stop().slideToggle();
+    });
+}
 
 function genNumber() {
     var cpuNum = Math.floor(Math.random() * 4);
@@ -86,5 +111,13 @@ function compare(cpu, user) {
         } else if (cpu == "Scissors" && user == "Paper") {
             return "cpuWin";
         }
+    }
+}
+
+function setPlayerName(name) {
+    if (name == null) {
+        return "Player";
+    } else {
+        return name;
     }
 }

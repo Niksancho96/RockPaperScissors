@@ -5,8 +5,6 @@ $(document).ready(function() {
     var cpuChoice = genNumber();
     var userChoice;
     
-    console.log(cpuChoice);
-    
     document.getElementById('rock').addEventListener('click', function(){
         userChoice = "Rock";
         if (compare(cpuChoice, userChoice) == "cpuWin") {
